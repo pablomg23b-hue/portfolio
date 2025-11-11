@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pablo Moreno — Data Analyst Portfolio</title>
+  <meta name="description" content="Pablo Moreno — Data Analyst Portfolio showcasing Tableau and data-driven operations insights." />
+  <style>
+    :root{--bg:#fafbfc;--ink:#0f172a;--muted:#667085;--line:#eceff3;--chip:#eef2ff;--accent:#2563eb}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1200px;margin:0 auto;padding:28px}
+    .btn{display:inline-block;border:1px solid var(--line);background:#fff;border-radius:10px;padding:9px 12px;margin-right:8px;transition:all .15s ease}
+    .btn:hover{transform:translateY(-1px);box-shadow:0 4px 10px rgba(2,6,23,.06)}
+    .tag{font-family:ui-monospace,Menlo,Consolas,monospace;color:var(--muted);letter-spacing:.4px}
+
+    /* HERO */
+    .hero{display:grid; grid-template-columns:250px 1fr; gap:32px; align-items:center; margin-bottom:32px}
+    .avatar-img{width:250px;height:auto;display:block;object-fit:cover;object-position:center;border:none;border-radius:24px;background:transparent;box-shadow:none}
+    .title{font-size:32px;margin:0 0 4px 0;letter-spacing:.2px}
+    .subtitle{color:var(--muted);margin:0 0 10px 0}
+
+    /* CONTENT */
+    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+    .chip{background:var(--chip);border:1px solid #dbeafe;color:#1e3a8a;padding:3px 10px;border-radius:999px;font-size:12px}
+    .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;box-shadow:0 2px 8px rgba(2,6,23,.04);margin-bottom:24px}
+    h2{font-size:13px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin:0 0 8px}
+    .list{margin:6px 0 0 18px}
+    .list li{margin:6px 0}
+    .tableau-embed{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff;height:800px;margin-top:20px;position:relative}
+    .scaled-frame{transform:scale(0.85);transform-origin:top center;width:118%;height:118%;overflow:hidden;}
+
+    @media (max-width:1000px){
+      .hero{grid-template-columns:1fr}
+      .avatar-img{width:100%;max-width:250px;justify-self:center}
+      .tableau-embed{height:600px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <!-- HERO -->
+    <section class="hero">
+      <img src="assets/headshot.png" alt="Pablo Moreno" class="avatar-img" />
+      <div>
+        <h1 class="title">Pablo Moreno</h1>
+        <p class="subtitle">Data Analyst — Operations & Forecasting</p>
+        <p>I help teams make smarter decisions by translating complex operational data into clear business insight. At The Cauldron, I improved efficiency across seven venues by automating reporting, optimising staffing, and building forecasting models that supported product launches and cost reductions.</p>
+        <div style="margin:10px 0 6px">
+          <a class="btn" href="mailto:pablo.moreno.data@gmail.com">Email</a>
+          <a class="btn" href="https://www.linkedin.com/in/pablo-moreno-garcia" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="Pablo_Moreno_Garcia_CV_Final.pdf" target="_blank" rel="noopener">Download CV</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section class="card" style="margin-bottom:24px">
+      <h2>About Me</h2>
+      <p>I’m a data-driven problem solver with 6+ years of experience improving business operations through analytics and automation. I use Excel, SQL and Tableau to turn messy, real-world data into decisions that move the business forward.</p>
+      <ul class="list" style="margin-top:8px">
+        <li><strong>Reduced labour costs</strong> by reshaping opening hours around demand and optimising staffing schedules.</li>
+        <li><strong>Automated weekly reporting</strong> and inventory processes, saving 2+ hours per venue each week.</li>
+        <li><strong>Built forecasting models</strong> to evaluate rollout cost and ROI for new product launches; created SOPs to standardise execution.</li>
+      </ul>
+      <div class="chips" style="margin-top:10px">
+        <span class="chip">Excel</span>
+        <span class="chip">Power Query</span>
+        <span class="chip">SQL</span>
+        <span class="chip">Tableau</span>
+        <span class="chip">Forecasting</span>
+        <span class="chip">Process Improvement</span>
+      </div>
+    </section>
+
+    <!-- PROJECT SECTION -->
+    <section id="project1" class="card">
+      <div class="tag">&lt;/Project 1&gt;</div>
+      <h2>Tableau Analytics Project (Customer Churn Case Study)</h2>
+      <h2>Purpose</h2>
+      <p>This project demonstrates my ability to clean, analyse and visualise complex datasets using Tableau. It simulates a customer churn analysis for a telecom provider, showcasing segmentation, trend analysis and demographic insights.</p>
+      <h2>Tech Stack</h2>
+      <div class="chips"><span class="chip">Excel</span><span class="chip">Power Query</span><span class="chip">Tableau</span></div>
+      <h2>Data Analytics Concepts</h2>
+      <div class="chips"><span class="chip">Segmentation</span><span class="chip">Trend Analysis</span><span class="chip">Customer Retention</span><span class="chip">Demographic Analysis</span><span class="chip">Data Cleaning</span></div>
+      <h2>4 Step Process / Summary</h2>
+      <ol class="list">
+        <li>Cleaned data in Power Query; removed out-of-range/missing values; created churn flags.</li>
+        <li>Explored variables and kept those with signal: demographics, contract type, tenure length, city.</li>
+        <li>Segmented and analysed churn trends to surface high-risk groups and leakage points.</li>
+        <li>Built an interactive Tableau dashboard with drill-downs by city, contract type, and demography.</li>
+      </ol>
+      <div class="tableau-embed">
+        <div class="scaled-frame">
+          <iframe
+            title="Customer Churn Dashboard"
+            src="https://public.tableau.com/views/TelecomDashboard_17583245432900/Dashboard1?:showVizHome=no&:embed=true&:toolbar=no"
+            style="width:120%;height:900px;border:0;"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
